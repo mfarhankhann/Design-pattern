@@ -9,6 +9,9 @@ package Gof.mediator.modified;
  *
  * @author fa20-bse-069
  */
-public class Teacher {
-    
+public record Teacher(String name) implements AbstractUser {
+    @Override
+    public void sendMessage(String message, AbstractUser... users) {
+        ChatRoom.showMessage(this, message, users);
+    }
 }
