@@ -15,7 +15,7 @@ public class Facebook extends Network {
         this.password=password;
     }
     public boolean LogIn(String userName,String password){
-        System.out.println("\Checking user's parameters");
+        System.out.println("Checking user's parameters");
         System.out.println("Name: "+this.userName);
         System.out.println("Password: ");
         for(int i =0;i<this.password.length();i++){
