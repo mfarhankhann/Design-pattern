@@ -9,15 +9,21 @@ package Gof.Strategy;
  *
  * @author fa20-bse-069
  */
+import Gof.Strategy.Handler;
+
 public class Context {
-    private Strategy strategy;
-    
-    public Context(Strategy strategy){
-    this.strategy=strategy;
+
+    private Handler headHandler;
+
+    public Context() {
+        headHandler = new OperationAdd();
+        headHandler.setNextHandler(new OperationSubtract());
+        headHandler.setNextHandler(new OperationMultiply());
+        headHandler.setNextHandler(new OperationDivide());
+        headHandler.setNextHandler(new OperationPower());
     }
-    public int executeStrategy(int num1,int num2){
-        return strategy.doOperation(num1,num2);
-    
+
+    public int compute(int num1, int num2) {
+        return headHandler.computeInRange(num1, num2);
     }
-    
 }

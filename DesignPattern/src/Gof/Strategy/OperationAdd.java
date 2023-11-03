@@ -9,11 +9,14 @@ package Gof.Strategy;
  *
  * @author fa20-bse-069
  */
-public class OperationAdd  implements Strategy {
-    
+public class OperationAdd extends Handler {
+
     @Override
-    public int doOperation(int num1,int num2){
-    return num1+num2;
+    public int computeInRange(int num1, int num2) {
+        if (0 <= num1 && num1 <= 100 && 0 <= num2 && num2 <= 100) {
+            return num1 + num2;
+        } else {
+            return nextHandler.computeInRange(num1, num2);
+        }
     }
-    
 }
