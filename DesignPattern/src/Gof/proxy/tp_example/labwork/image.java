@@ -3,16 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Gof.visitor;
-
-import visitor.ComputerPartVisitor;
+package Gof.proxy.tp_example.labwork;
 
 /**
  *
  * @author fa20-bse-069
  */
-public interface ComputerPart {
-   public void accept(ComputerPartVisitor computerPartVisitor);
-
-    void accept(ComputerPartVisitor computerPartVisitor);
+interface image {
+    
+    public void display(String imagetype);
 }

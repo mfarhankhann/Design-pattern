@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package visitor;
+package Gof.visitor;
 
-import Gof.Visitor.ComputerPart;
+import visitor.ComputerPart;
 
 /**
  *
  * @author fa20-bse-069
  */
-public class Keyboard extends ComputerPart {
+public class Keyboard implements ComputerPart {
+
+    Keyboard() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     Keyboard() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

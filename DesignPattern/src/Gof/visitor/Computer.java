@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package visitor;
+package Gof.visitor;
 
-import Gof.Visitor.ComputerPart;
-import Gof.Visitor.ComputerPartVisitor;
-import Gof.Visitor.Keyboard;
-import Gof.Visitor.Monitor;
-import Gof.Visitor.Mouse;
+import Gof.visitor.ComputerPart;
+import visitor.ComputerPartVisitor;
+import Gof.visitor.Keyboard;
+import Gof.visitor.Monitor;
+import Gof.visitor.Mouse;
 
 /**
  *

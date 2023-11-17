@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package visitor;
+package Gof.visitor;
 
-import Gof.Visitor.ComputerPart;
+import visitor.ComputerPart;
+import visitor.ComputerPartVisitor;
 
 /**
  *
@@ -17,8 +18,17 @@ public class Monitor implements ComputerPart {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    Monitor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
    @Override
    public void accept(ComputerPartVisitor computerPartVisitor) {
       computerPartVisitor.visit(this);
    }
+
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

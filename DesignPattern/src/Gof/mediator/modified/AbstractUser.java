@@ -11,7 +11,7 @@ package Gof.mediator.modified;
  */
 import java.util.Date;
 
-public class ChatRoom {
+public class AbstractUser {
 
     public static void showMessage(AbstractUser user, String message, AbstractUser... receivers) {
         String recieverNames = "";
@@ -20,5 +20,17 @@ public class ChatRoom {
         }
         
         System.out.println(new Date() + " [" + user.name() +"-> <"+recieverNames+ "> ] : " + message);
+    }
+
+    private String name() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void sendMessage(String ali_Says_Hi_to_COMSATS_University, AbstractUser comsatsUniversity) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void sendMessage(String ali_Says_Hi_to_many_at_the_same_time, AbstractUser comsatsUniversity, AbstractUser nustUniversity, AbstractUser aliTeacher, AbstractUser ahmadUser, AbstractUser zainUser) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

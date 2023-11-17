@@ -3,15 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package visitor;
+package Gof.visitor;
 
-import Gof.Visitor.ComputerPart;
+import visitor.ComputerPart;
+import visitor.ComputerPartVisitor;
 
 /**
  *
  * @author fa20-bse-069
  */
-public class Mouse extends ComputerPart {
+public class Mouse implements ComputerPart {
+
+    Mouse() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     Mouse() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -21,4 +26,9 @@ public class Mouse extends ComputerPart {
    public void accept(ComputerPartVisitor computerPartVisitor) {
       computerPartVisitor.visit(this);
    }
+
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
