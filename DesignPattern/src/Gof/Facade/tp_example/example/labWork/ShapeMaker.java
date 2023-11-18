@@ -13,28 +13,33 @@ public class ShapeMaker {
     private Shape circle;
     private Shape rectangle;
     private Shape square;
-    
+    private Shape triangle;
     
     public ShapeMaker(){
     circle = new Circle();
     rectangle =new Rectangle();
     square=new Square();
+    triangle=new Triangle();
     
     
     }
     
-    public void DrawCircle(){
+    public void DrawCircle(String... args){
     
-        circle.draw("radius");
+        circle.draw(args);
     
     }
-    public void DrawRectangle(){
-    rectangle.draw("Height","Width");
+    public void DrawRectangle(String... args){
+    rectangle.draw(args);
     }
     
-    public void DrawSquare(){
+    public void DrawSquare(String... args){
     
-    square.draw("length","height");
+    square.draw(args);
+    }
+    public void DrawTriangle(String... args){
+    
+        triangle.draw(args);
     }
     
 }

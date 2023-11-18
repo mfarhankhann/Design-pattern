@@ -12,10 +12,10 @@ public class facadeDemo {
     public static void main(String [] args){
     
         ShapeMaker shapemaker= new ShapeMaker();
-        shapemaker.DrawCircle();
-        shapemaker.DrawRectangle();
-        shapemaker.DrawSquare();
-        
+        shapemaker.DrawCircle("radius");
+        shapemaker.DrawRectangle("width","height");
+        shapemaker.DrawSquare("length","height");
+        shapemaker.DrawTriangle("oneSide","SecondeSide","ThirdSide");
     
     }
     
