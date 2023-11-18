@@ -16,6 +16,7 @@ public class facadeDemo {
         shapemaker.DrawRectangle("width","height");
         shapemaker.DrawSquare("length","height");
         shapemaker.DrawTriangle("oneSide","SecondeSide","ThirdSide");
+        shapemaker.DrawPentagon("oneSide","SecondeSide","ThirdSide","5th","6th");
     
     }
     

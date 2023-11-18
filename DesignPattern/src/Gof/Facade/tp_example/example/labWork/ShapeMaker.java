@@ -14,12 +14,14 @@ public class ShapeMaker {
     private Shape rectangle;
     private Shape square;
     private Shape triangle;
+    private Shape pentagon;
     
     public ShapeMaker(){
     circle = new Circle();
     rectangle =new Rectangle();
     square=new Square();
     triangle=new Triangle();
+    pentagon = new Pentagon();
     
     
     }
@@ -40,6 +42,10 @@ public class ShapeMaker {
     public void DrawTriangle(String... args){
     
         triangle.draw(args);
+    }
+    public void DrawPentagon(String... args){
+    
+    pentagon.draw(args);
     }
     
 }
