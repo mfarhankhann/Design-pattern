@@ -9,28 +9,31 @@ package Gof.mediator.modified;
  *
  * @author fa20-bse-069
  */
+
+
 import java.util.Date;
 
 public class AbstractUser {
 
+    private String name;
+
+    public AbstractUser(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public static void showMessage(AbstractUser user, String message, AbstractUser... receivers) {
-        String recieverNames = "";
+        String receiverNames = "";
         for (AbstractUser receiver : receivers) {
-            recieverNames += receiver.name() + ", ";
+            receiverNames += receiver.getName() + ", ";
         }
-        
-        System.out.println(new Date() + " [" + user.name() +"-> <"+recieverNames+ "> ] : " + message);
+
+        System.out.println(new Date() + " [" + user.getName() + "-> <" + receiverNames + "> ] : " + message);
     }
 
-    private String name() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void sendMessage(String ali_Says_Hi_to_COMSATS_University, AbstractUser comsatsUniversity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void sendMessage(String ali_Says_Hi_to_many_at_the_same_time, AbstractUser comsatsUniversity, AbstractUser nustUniversity, AbstractUser aliTeacher, AbstractUser ahmadUser, AbstractUser zainUser) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    // Other methods as needed...
 }
+
