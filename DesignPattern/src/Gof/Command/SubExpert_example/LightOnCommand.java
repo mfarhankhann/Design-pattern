@@ -8,14 +8,20 @@ package Gof.Command.SubExpert_example;
  *
  * @author OSL
  */
+//Concrete Command
+
 public class LightOnCommand implements Command {
+
+    // reference to the light
     private Light light;
-    
-    public LightOnCommand(Light light){
-    this.light=light;
+
+    public LightOnCommand(Light light) {
+        this.light = light;
     }
-    public void execute(){
-    light.switchOn();
+
+    public void execute() {
+        light.switchOn();
         System.out.println("Light is on");
     }
+
 }

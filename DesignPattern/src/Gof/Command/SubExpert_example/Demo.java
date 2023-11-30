@@ -9,16 +9,27 @@ package Gof.Command.SubExpert_example;
  * @author OSL
  */
 public class Demo {
-    public static void main(String [] args){
-    Light light=new Light();
-    Command lightOn=new LightOnCommand(light);
-    Command lightOff= new LightOffCommand(light);
-    
-    command.setCommand(lightOn);
-    control.pressButton();
-    
-    control.setCommand(lightOff);
-    control.pressButton();
+
+    public static void main(String[] args) {
+
+        RemoteControl control = new RemoteControl();
+        Light light = new Light();
+        Command lightsOn = new LightOnCommand(light);
+        Command lightsOff = new LightOffCommand(light);
+        Command replaceLight = new LightReplaceCommand(light); // New command
+
+        // switch on
+        control.setCommand(lightsOn);
+        control.pressButton();
+
+        // switch off
+        control.setCommand(lightsOff);
+        control.pressButton();
+
+        // replace light
+        control.setCommand(replaceLight);
+        control.pressButton();
     }
-    
 }
+
+

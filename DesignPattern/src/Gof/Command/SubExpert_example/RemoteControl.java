@@ -8,12 +8,18 @@ package Gof.Command.SubExpert_example;
  *
  * @author OSL
  */
+//Invoker
+
 public class RemoteControl {
+
     private Command command;
-    public void setCommand(Command command){
-        this.command=command;
+
+    public void setCommand(Command command) {
+        this.command = command;
     }
-    public void presButton(){
+
+    public void pressButton() {
         command.execute();
     }
+
 }

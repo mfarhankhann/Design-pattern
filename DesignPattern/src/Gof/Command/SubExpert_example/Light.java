@@ -9,15 +9,25 @@ package Gof.Command.SubExpert_example;
  * @author OSL
  */
 //reciver
+//Receiver
+
+// Receiver
 public class Light {
-    
+
     private boolean isOn;
-    
-    public void switchOn(){
-    isOn=true;
+
+    public void switchOn() {
+        System.out.println("Light is being switched ON");
+        isOn = true;
     }
-    public void switchOff(){
-        isOn=false;
+
+    public void switchOff() {
+        System.out.println("Light is being switched OFF");
+        isOn = false;
     }
-    
+
+    public boolean isLightOn() {
+        return isOn;
+    }
 }
+
