@@ -12,13 +12,11 @@ import java.util.List;
  *
  * @author fa20-bse-069
  */
-class HOD extends BaseEmployee {
+class Director extends BaseEmployee {
     private List<IEmployee> subordinates;
-    private String departmentName;
 
-    public HOD(String name, int salary, String departmentName) {
+    public Director(String name, int salary) {
         super(name, salary);
-        this.departmentName = departmentName;
         subordinates = new ArrayList<>();
     }
 
@@ -34,12 +32,8 @@ class HOD extends BaseEmployee {
         return subordinates;
     }
 
-    public String getDepartmentName() {
-        return departmentName;
-    }
-
     @Override
     public String toString() {
-        return "HOD: [Name: " + name + ", department: " + departmentName + "]" + "\nSubordinates: " + subordinates;
+        return "Director: [Name: " + name + ", subordinates: " + subordinates + "]";
     }
 }

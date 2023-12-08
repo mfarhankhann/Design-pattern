@@ -9,6 +9,16 @@ package Gof.Composite.LabWork;
  *
  * @author fa20-bse-069
  */
-public class DOO {
-    
+class DOO extends BaseEmployee {
+    private String rank;
+
+    public DOO(String name, int salary, String rank) {
+        super(name, salary);
+        this.rank = rank;
+    }
+
+    @Override
+    public String toString() {
+        return "DOO: [Name: " + name + ", rank: " + rank + ", salary: " + salary + "]";
+    }
 }

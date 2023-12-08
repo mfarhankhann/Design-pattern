@@ -9,6 +9,19 @@ package Gof.Composite.LabWork;
  *
  * @author fa20-bse-069
  */
-public class IEmployee {
+
+interface IEmployee {
+    void giveBonus(int bonusPercentage);
+
     
 }
+
+
+
+
+
+
+
+
+
+

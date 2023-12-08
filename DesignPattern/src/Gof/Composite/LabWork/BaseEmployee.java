@@ -9,6 +9,17 @@ package Gof.Composite.LabWork;
  *
  * @author fa20-bse-069
  */
-public class BaseEmployee {
-    
+abstract class BaseEmployee implements IEmployee {
+    protected String name;
+    protected int salary;
+
+    public BaseEmployee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    @Override
+    public void giveBonus(int bonusPercentage) {
+        salary += salary * bonusPercentage / 100;
+    }
 }
