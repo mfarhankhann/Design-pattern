@@ -18,12 +18,22 @@ public class Demo {
 
     public static void main(String[] args) {
         Forest forest = new Forest();
+
         for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Summer Oak", Color.GREEN, "Oak texture stub");
+                    "Summer Oak", Color.GREEN, "Oak texture stub", false, 0);
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Autumn Oak", Color.ORANGE, "Autumn Oak texture stub");
+                    "Autumn Oak", Color.ORANGE, "Autumn Oak texture stub", false, 0);
         }
+
+        // Create a fruit tree type with 5 fruits
+        TreeType fruitTreeType = new TreeType("Fruit Tree", Color.YELLOW, "Fruit tree texture", true, 5);
+
+        // Use the fruit tree type when planting a tree in the forest
+        forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
+                fruitTreeType.getName(), fruitTreeType.getColor(), fruitTreeType.getOtherTreeData(),
+                fruitTreeType.isFruitTree(), fruitTreeType.getCountOfFruits());
+
         forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
         forest.setVisible(true);
 
