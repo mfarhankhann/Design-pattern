@@ -3,26 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/MediaAdapter.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/AdapterPatternDemo.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/CutCommand.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/WavPlayer.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/CommandHistory.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/SubExpert_example/Command.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/SubExpert_example/Demo.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/Command.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/AdvancedMediaPlayer.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/SubExpert_example/Light.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/AudioPlayer.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/SubExpert_example/LightReplaceCommand.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/CopyCommand.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/Demo.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/Editor.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/FlacPlayer.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/Mp4Player.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Command/refectoringGuru/PasteCommand.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/VlcPlayer.java</file>
-            <file>file:/F:/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/Adapter/tp_example/MediaPlayer.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/modify/TreeFactory.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/modify/Demo.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/Example/Forest.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/modify/TreeType.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/modify/Forest.java</file>
+            <file>file:/F:/7th%20Semester/Design%20Patterns/Design%20pattern%20implementation/Design-pattern/DesignPattern/src/Gof/FlyWeight/LabWork/modify/Tree.java</file>
         </group>
     </open-files>
 </project-private>
