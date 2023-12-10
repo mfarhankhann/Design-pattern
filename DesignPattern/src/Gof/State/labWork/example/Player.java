@@ -15,15 +15,18 @@ import java.util.List;
 public class Player {
     private State state;
     private boolean playing = false;
-    private List<String> playlist = new ArrayList<>();
-    private int currentTrack = 0;
+    private TrackIterator trackIterator;
 
     public Player() {
         this.state = new ReadyState(this);
         setPlaying(true);
+
+        List<String> playlist = new ArrayList<>();
         for (int i = 1; i <= 12; i++) {
             playlist.add("Track " + i);
         }
+
+        this.trackIterator = new TrackIterator(playlist);
     }
 
     public void changeState(State state) {
@@ -43,26 +46,18 @@ public class Player {
     }
 
     public String startPlayback() {
-        return "Playing " + playlist.get(currentTrack);
+        return "Playing " + trackIterator.getCurrentTrack();
     }
 
     public String nextTrack() {
-        currentTrack++;
-        if (currentTrack > playlist.size() - 1) {
-            currentTrack = 0;
-        }
-        return "Playing " + playlist.get(currentTrack);
+        return "Playing " + trackIterator.nextTrack();
     }
 
     public String previousTrack() {
-        currentTrack--;
-        if (currentTrack < 0) {
-            currentTrack = playlist.size() - 1;
-        }
-        return "Playing " + playlist.get(currentTrack);
+        return "Playing " + trackIterator.previousTrack();
     }
 
     public void setCurrentTrackAfterStop() {
-        this.currentTrack = 0;
+        trackIterator.reset();
     }
 }
